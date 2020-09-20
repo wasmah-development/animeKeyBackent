@@ -1,0 +1,17 @@
+F:\Wasmaa\Git\Raqeb\Model\bin\Debug\netstandard2.0\Model.deps.json
+F:\Wasmaa\Git\Raqeb\Model\bin\Debug\netstandard2.0\Model.dll
+F:\Wasmaa\Git\Raqeb\Model\bin\Debug\netstandard2.0\Model.pdb
+F:\Wasmaa\Git\Raqeb\Model\obj\Debug\netstandard2.0\Model.csproj.CoreCompileInputs.cache
+F:\Wasmaa\Git\Raqeb\Model\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+F:\Wasmaa\Git\Raqeb\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
+F:\Wasmaa\Git\Raqeb\Model\obj\Debug\netstandard2.0\Model.dll
+F:\Wasmaa\Git\Raqeb\Model\obj\Debug\netstandard2.0\Model.pdb
+F:\Wasmaa\Git\Raqeb\Model\obj\Debug\netstandard2.0\Model.csprojAssemblyReference.cache
+F:\Wasmaa\Git\animeKeyBackend\AnimeKeyBackend\Model\bin\Debug\netstandard2.0\Model.deps.json
+F:\Wasmaa\Git\animeKeyBackend\AnimeKeyBackend\Model\bin\Debug\netstandard2.0\Model.dll
+F:\Wasmaa\Git\animeKeyBackend\AnimeKeyBackend\Model\bin\Debug\netstandard2.0\Model.pdb
+F:\Wasmaa\Git\animeKeyBackend\AnimeKeyBackend\Model\obj\Debug\netstandard2.0\Model.csproj.CoreCompileInputs.cache
+F:\Wasmaa\Git\animeKeyBackend\AnimeKeyBackend\Model\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+F:\Wasmaa\Git\animeKeyBackend\AnimeKeyBackend\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
+F:\Wasmaa\Git\animeKeyBackend\AnimeKeyBackend\Model\obj\Debug\netstandard2.0\Model.dll
+F:\Wasmaa\Git\animeKeyBackend\AnimeKeyBackend\Model\obj\Debug\netstandard2.0\Model.pdb

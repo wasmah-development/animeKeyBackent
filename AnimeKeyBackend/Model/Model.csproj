@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200130181739_intialdb.cs" />
+    <Compile Remove="Migrations\20200130181739_intialdb.Designer.cs" />
+    <Compile Remove="Migrations\20200209175822_intialdb.cs" />
+    <Compile Remove="Migrations\20200209175822_intialdb.Designer.cs" />
+    <Compile Remove="Migrations\20200213140645_Database Snapshat.cs" />
+    <Compile Remove="Migrations\20200213140645_Database Snapshat.Designer.cs" />
+    <Compile Remove="Migrations\20200215191305_intialDB.cs" />
+    <Compile Remove="Migrations\20200215191305_intialDB.Designer.cs" />
+    <Compile Remove="Migrations\20200226121719_initial.cs" />
+    <Compile Remove="Migrations\20200226121719_initial.Designer.cs" />
+    <Compile Remove="Migrations\20200227103024_initial.cs" />
+    <Compile Remove="Migrations\20200227103024_initial.Designer.cs" />
+    <Compile Remove="Migrations\20200304164852_EditLanguagesTable.cs" />
+    <Compile Remove="Migrations\20200304164852_EditLanguagesTable.Designer.cs" />
+    <Compile Remove="Migrations\20200314171720_intialDB.cs" />
+    <Compile Remove="Migrations\20200314171720_intialDB.Designer.cs" />
+    <Compile Remove="Migrations\20200318163831_newscreens.cs" />
+    <Compile Remove="Migrations\20200318163831_newscreens.Designer.cs" />
+    <Compile Remove="Migrations\20200318171900_fixissue.cs" />
+    <Compile Remove="Migrations\20200318171900_fixissue.Designer.cs" />
+    <Compile Remove="Migrations\20200318174432_initial.cs" />
+    <Compile Remove="Migrations\20200318174432_initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>
