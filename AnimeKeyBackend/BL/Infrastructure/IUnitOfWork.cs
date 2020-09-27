@@ -28,7 +28,10 @@ namespace BL.Infrastructure
         SysKeyValRepository SysKeyValRepository { get; }
     
         LanguagesRepository LanguagesRepository { get; }
-      
+        CategoriesRepository CategoriesRepository { get; }
+
+        AgeGroupRepository AgeGroupRepository { get; }
+
 
         void ExecuteSqlCommand(string sqlCommand);
         int Save();

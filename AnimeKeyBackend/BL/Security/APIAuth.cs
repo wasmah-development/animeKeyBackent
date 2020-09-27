@@ -15,14 +15,18 @@ namespace BL.Security
     public interface IAuthenticateService
     {
         Users AuthenticateUser(ApiLoginModel request, out string token);
+        Users GetUserByToken(string token);
+
     }
 
     public class TokenAuthenticationService : IAuthenticateService
     {
         private readonly IUserManagementService _userManagementService;
         private readonly TokenManagement _tokenManagement;
+        private readonly IUnitOfWork _uow;
 
-        public TokenAuthenticationService(IUserManagementService service, IOptions<TokenManagement> tokenManagement)
+
+        public TokenAuthenticationService(IUserManagementService service, IOptions<TokenManagement> tokenManagement, IUnitOfWork uow)
         {
             _userManagementService = service;
             _tokenManagement = tokenManagement.Value;
@@ -52,9 +56,26 @@ namespace BL.Security
             }
             return user;
         }
+        public Users GetUserByToken(string Token)
+        {
+            try
+            {
+                var handler = new JwtSecurityTokenHandler();
+                var jsonToken = handler.ReadToken(Token);
+                var tokenS = handler.ReadToken(Token) as JwtSecurityToken;
+                var email = tokenS.Claims.First(claim => claim.Type == "email").Value;
+                var user = _uow.UsersRepository.GetMany(ent => ent.Email == email).FirstOrDefault();
+
+                return user;
+            }
+            catch { return null; }
+        }
+
     }
 
-    public interface IUserManagementService
+}
+
+public interface IUserManagementService
     {
         Users IsValidUser(string username, string password);
     }
@@ -72,5 +93,5 @@ namespace BL.Security
             ).ToList();
             return user.Count() == 1 ? user.FirstOrDefault() : null;
         }
-    }
+    
 }

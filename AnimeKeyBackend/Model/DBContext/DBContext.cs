@@ -171,8 +171,8 @@ namespace Model
             #endregion
 
             #region Screens
-
-            // groups
+             
+            // 1- groups
             modelBuilder.Entity<Screens>().HasData(new Screens
             {
                 Id = 1,
@@ -186,7 +186,7 @@ namespace Model
                 ModuleId = 1
             });
 
-            // users
+            // 2- users
             modelBuilder.Entity<Screens>().HasData(new Screens
             {
                 Id = 2,
@@ -200,7 +200,7 @@ namespace Model
                 ModuleId = 1
             });
 
-            // Lookups
+            // 3- Lookups
             modelBuilder.Entity<Screens>().HasData(new Screens
             {
                 Id = 3,
@@ -215,7 +215,7 @@ namespace Model
             });
 
            
-            // Countries
+            // 4- Countries
             modelBuilder.Entity<Screens>().HasData(new Screens
             {
                 Id = 4,
@@ -230,7 +230,7 @@ namespace Model
             });
 
 
-            // Company Branch
+            // 5- Company Branch
             modelBuilder.Entity<Screens>().HasData(new Screens
             {
                 Id = 5,
@@ -245,7 +245,7 @@ namespace Model
             });
 
 
-            // SysKeyVal 
+            // 6- SysKeyVal 
             modelBuilder.Entity<Screens>().HasData(new Screens
             {
                 Id = 6,
@@ -259,7 +259,7 @@ namespace Model
                 ModuleId = 6
             });
             
-            // Language
+            // 7- Language
             modelBuilder.Entity<Screens>().HasData(new Screens
             {
                 Id = 7,
@@ -271,7 +271,34 @@ namespace Model
                 CreationDate = DateTime.Now,
                 ModuleId = 2
             });
-           
+            // 8- Categories
+            modelBuilder.Entity<Screens>().HasData(new Screens
+            {
+                Id = 8,
+                Code = "Categories-8",
+                ArabicName = "الاصناف",
+                EnglishName = "Categories",
+                ScreenCode = "Categories",
+                Icon = "fas fa-code-branch",
+                CreationDate = DateTime.Now,
+                ModuleId = 2
+            });
+            // 9- AgeGroup
+            modelBuilder.Entity<Screens>().HasData(new Screens
+            {
+                Id = 9,
+                Code = "AgeGroup-9",
+                ArabicName = "مجموعة العمر",
+                EnglishName = "AgeGroup",
+                ScreenCode = "AgeGroup",
+                Icon = "fas fa-code-branch",
+                CreationDate = DateTime.Now,
+                ModuleId = 2
+            });
+
+
+
+
             #endregion
 
             #region Screens Permissions
@@ -450,6 +477,63 @@ namespace Model
                 PermissionId = 4
             });
 
+            // Categories
+            modelBuilder.Entity<ScreenPermissions>().HasData(new ScreenPermissions
+            {
+                Id = 37,
+                ScreenId = 8,
+                PermissionId = 1
+            });
+
+            modelBuilder.Entity<ScreenPermissions>().HasData(new ScreenPermissions
+            {
+                Id = 38,
+                ScreenId = 8,
+                PermissionId = 2
+            });
+
+            modelBuilder.Entity<ScreenPermissions>().HasData(new ScreenPermissions
+            {
+                Id = 39,
+                ScreenId = 8,
+                PermissionId = 3
+            });
+
+            modelBuilder.Entity<ScreenPermissions>().HasData(new ScreenPermissions
+            {
+                Id = 40,
+                ScreenId = 8,
+                PermissionId = 4
+            });
+            // 9- AgeGroup
+            modelBuilder.Entity<ScreenPermissions>().HasData(new ScreenPermissions
+            {
+                Id = 41,
+                ScreenId = 9,
+                PermissionId = 1
+            });
+
+            modelBuilder.Entity<ScreenPermissions>().HasData(new ScreenPermissions
+            {
+                Id = 42,
+                ScreenId = 9,
+                PermissionId = 2
+            });
+
+            modelBuilder.Entity<ScreenPermissions>().HasData(new ScreenPermissions
+            {
+                Id = 43,
+                ScreenId = 9,
+                PermissionId = 3
+            });
+
+            modelBuilder.Entity<ScreenPermissions>().HasData(new ScreenPermissions
+            {
+                Id = 44,
+                ScreenId = 9,
+                PermissionId = 4
+            });
+
             #endregion
 
             base.OnModelCreating(modelBuilder);
@@ -468,9 +552,12 @@ namespace Model
         public virtual DbSet<Screens> Screens { get; set; }
         public virtual DbSet<UserGroups> UserGroups { get; set; }
         public virtual DbSet<Users> Users { get; set; }
-  
         public virtual DbSet<SysKeyVal> SysKeyVal { get; set; }
-       
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<AgeGroup> AgeGroup { get; set; }
+
+
+
 
     }
 }

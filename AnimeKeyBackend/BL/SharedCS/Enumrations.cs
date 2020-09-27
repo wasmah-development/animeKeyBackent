@@ -11,10 +11,7 @@ namespace BL.SharedCS
 
         public enum EN_Modules { UsersManagement=1,SystemSettings ,TasksManagement,CustomersManagement}
 
-        public enum EN_Screens { Groups = 1,Users ,LookUps,JobTitle,Nationality,TaskType,Items,Employees, Country ,Departments,WorkShifts,Customers,Tasks,FixedAssetsType,FixedAsset,FixedAssetRequest, MonitorEmployees, CompanyBranches, Vendors, ContractType ,
-            ModelMakerVehicle,ServiceType , Vehicle, VehiclesStatus, Contracts , Services , Purchasers , ContractorTypes , OdometerMeasures, Costs,
-            VehicleFuel, OdometerVehicle, DisplayGroup, VehicleDisplayGroup,Regions,
-            Drivers, VehicleDrivers, Vehicles, SysKeyVal,VehicleRegion,Languages,Cameras,Category, Company, Maintenance, DriverDecument, Alerts,Pages,PagesTypes
+        public enum EN_Screens { Groups = 1,Users , LookUps, Countries, SysKeyVal, Languages, Categories,AgeGroup
         }
 
         public enum EN_Permissions { View = 1, Create,Edit,Delete }

@@ -13,6 +13,9 @@ namespace Model
         [StringLength(200, ErrorMessage = "Must be at max {1} characters")]
         public string UserName { get; set; }
 
+        [RegularExpression(@"^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$", ErrorMessage = "NotValidEmailAddress")]
+        public string Email { get; set; }
+
         [Required(ErrorMessage = "Required")]
         [StringLength(200, ErrorMessage = "Must be at max {1} characters")]
         public string Password { get; set; }

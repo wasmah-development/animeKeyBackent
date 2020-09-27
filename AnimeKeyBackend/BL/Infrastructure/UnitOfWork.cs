@@ -30,7 +30,12 @@ namespace BL.Infrastructure
         public SysKeyValRepository SysKeyValRepository => new SysKeyValRepository(_ctx);
      
         public LanguagesRepository LanguagesRepository => new LanguagesRepository(_ctx);
-   
+        public CategoriesRepository CategoriesRepository => new CategoriesRepository(_ctx);
+
+        public AgeGroupRepository AgeGroupRepository => new AgeGroupRepository(_ctx);
+
+
+
         public UnitOfWork(DBContext ctx)
         {
             _ctx = ctx;
