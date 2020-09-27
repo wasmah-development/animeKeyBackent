@@ -34,14 +34,14 @@ namespace AnimeKeyBackend.Services
                     count = _uow.UsersRepository.GetMany(ent => true).Count();
                     code = "US-" + (count+1);
                     break;
-                case EN_Screens.Categories:
-                    count = _uow.CategoriesRepository.GetMany(ent => true).Count();
-                    code = "CAT-" + (count + 1);
-                    break;
-                case EN_Screens.AgeGroup:
-                    count = _uow.AgeGroupRepository.GetMany(ent => true).Count();
-                    code = "AgeGrp-" + (count + 1);
-                    break;
+                //case EN_Screens.Categories:
+                //    count = _uow.CategoriesRepository.GetMany(ent => true).Count();
+                //    code = "CAT-" + (count + 1);
+                //    break;
+                //case EN_Screens.AgeGroup:
+                //    count = _uow.AgeGroupRepository.GetMany(ent => true).Count();
+                //    code = "AgeGrp-" + (count + 1);
+                //    break;
                 default:
                     count = 1;
                     break;
