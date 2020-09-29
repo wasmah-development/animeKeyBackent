@@ -553,11 +553,7 @@ namespace Model
         public virtual DbSet<UserGroups> UserGroups { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<SysKeyVal> SysKeyVal { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<AgeGroup> AgeGroup { get; set; }
-
-
-
-
+        //public virtual DbSet<Category> Categories { get; set; }
+        //public virtual DbSet<AgeGroup> AgeGroup { get; set; }
     }
 }
