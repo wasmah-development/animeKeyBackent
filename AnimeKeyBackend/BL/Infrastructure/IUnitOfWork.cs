@@ -26,11 +26,11 @@ namespace BL.Infrastructure
         UsersRepository UsersRepository { get; }
        
         SysKeyValRepository SysKeyValRepository { get; }
-    
-        LanguagesRepository LanguagesRepository { get; }
-        //CategoriesRepository CategoriesRepository { get; }
 
-        //AgeGroupRepository AgeGroupRepository { get; }
+        LanguagesRepository LanguagesRepository { get; }
+        CategoriesRepository CategoriesRepository { get; }
+
+        AgeGroupRepository AgeGroupRepository { get; }
 
 
         void ExecuteSqlCommand(string sqlCommand);
