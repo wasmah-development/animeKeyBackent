@@ -30,6 +30,7 @@ namespace BL.Infrastructure
         public LanguagesRepository LanguagesRepository => new LanguagesRepository(_ctx);
         public CategoriesRepository CategoriesRepository => new CategoriesRepository(_ctx);
         public AgeGroupRepository AgeGroupRepository => new AgeGroupRepository(_ctx);
+        public NewsRepository NewsRepository => new NewsRepository(_ctx);
 
         public UnitOfWork(DBContext ctx)
         {

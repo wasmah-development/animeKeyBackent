@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using AnimeKeyBackend.Services;
 using BL.Infrastructure;
 using BL.Secuirty;
@@ -12,7 +10,6 @@ using Model;
 using Model.APIModels;
 using static BL.SharedCS.Enumrations;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace AnimeKeyBackend.Controllers
 {

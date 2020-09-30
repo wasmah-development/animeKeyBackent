@@ -32,6 +32,7 @@ namespace BL.Infrastructure
 
         AgeGroupRepository AgeGroupRepository { get; }
 
+        NewsRepository NewsRepository { get; }
 
         void ExecuteSqlCommand(string sqlCommand);
         int Save();
